@@ -122,7 +122,8 @@ html, body{
 		position: absolute;
 		top: 0;
 		right: 0;
-		margin: 5%;
+		margin-right: 5%;
+		margin-top: 2.5%;
 
 		.fa-times{
 			display: none;
@@ -229,4 +230,9 @@ html, body{
 		font-size: small;
 	}
 }
+
+body .form-container .form-title{
+	font-size: x-large;
+}
+
 

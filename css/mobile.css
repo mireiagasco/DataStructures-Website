@@ -128,7 +128,8 @@ html, body {
   position: absolute;
   top: 0;
   right: 0;
-  margin: 5%;
+  margin-right: 5%;
+  margin-top: 2.5%;
 }
 
 .container .homepage .burger-menu .fa-times {
@@ -234,5 +235,9 @@ html, body {
   background-color: var(--gray);
   opacity: .8;
   font-size: small;
+}
+
+body .form-container .form-title {
+  font-size: x-large;
 }
 /*# sourceMappingURL=mobile.css.map */
