@@ -12,6 +12,7 @@
 
 html, body {
   overflow-x: hidden;
+  overflow-y: hidden;
   color: white;
   text-align: center;
   line-height: 1.5;
@@ -46,7 +47,7 @@ html, body {
 }
 
 .homepage .navbar .nav-content {
-  position: absolute;
+  position: fixed;
   height: 100vh;
   width: 100%;
   top: 0;
@@ -74,7 +75,6 @@ html, body {
 
 .homepage .navbar .burger-menu {
   display: block;
-  position: relative;
   font-size: 2rem;
   z-index: 2;
 }
@@ -125,11 +125,8 @@ html, body {
 }
 
 .container .homepage .burger-menu {
-  position: absolute;
   top: 0;
   right: 0;
-  margin-right: 5%;
-  margin-top: 2.5%;
 }
 
 .container .homepage .burger-menu .fa-times {
