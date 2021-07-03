@@ -68,12 +68,6 @@ html, body {
   opacity: .8;
 }
 
-.homepage .navbar .credits:hover {
-  font-style: normal;
-  color: var(--orange);
-  opacity: 1;
-}
-
 .homepage .navbar .nav, .homepage .navbar .social-media {
   display: none;
 }
@@ -83,11 +77,6 @@ html, body {
   position: relative;
   font-size: 2rem;
   z-index: 2;
-}
-
-.homepage .navbar .burger-menu:hover {
-  color: var(--orange);
-  cursor: pointer;
 }
 
 .homepage .hero {
@@ -133,10 +122,6 @@ html, body {
 
 .container .homepage .social-media .icon-text {
   opacity: 0;
-}
-
-.container .homepage .social-media .icon:hover {
-  color: var(--orange);
 }
 
 .container .homepage .burger-menu {
@@ -192,12 +177,6 @@ html, body {
   font-style: italic;
 }
 
-.structures .structure-container .structure-content .structure-description a:hover {
-  color: var(--orange);
-  font-weight: bold;
-  font-style: normal;
-}
-
 /*-------------------------------------------------
 					Footer
 --------------------------------------------------*/
@@ -243,15 +222,6 @@ html, body {
 
 .end .structure-container .contact-icon-text {
   font-weight: bold;
-}
-
-.end .structure-container .contact-icon-wrapper:hover {
-  background-color: var(--gray);
-  border-color: var(--orange);
-}
-
-.end .structure-container .contact-icon-wrapper:hover i, .end .structure-container .contact-icon-wrapper:hover .contact-icon-text {
-  color: var(--orange);
 }
 
 .end footer {

@@ -57,12 +57,6 @@ html, body{
 			font-weight: bold;
 			font-size: large;
 			opacity: .8;
-
-			&:hover{
-				font-style: normal;
-				color: var(--orange);
-				opacity: 1;
-			}
 		}
 
 		.nav, .social-media{
@@ -74,11 +68,6 @@ html, body{
 			position: relative;
 			font-size: 2rem;
 			z-index: 2;
-
-			&:hover{
-				color: var(--orange);
-				cursor: pointer;
-			}
 		}
 	}
 
@@ -124,10 +113,6 @@ html, body{
 
 		.icon-text{
 			opacity: 0;
-		}
-
-		.icon:hover{
-			color: var(--orange);
 		}
 	}
 	
@@ -188,12 +173,6 @@ html, body{
 
 				a{
 					font-style: italic;
-
-					&:hover{
-						color: var(--orange);
-						font-weight: bold;
-						font-style: normal;
-					}
 				}
 			}
 		}
@@ -239,15 +218,6 @@ html, body{
 
 		.contact-icon-text{
 			font-weight: bold;
-		}
-
-		.contact-icon-wrapper:hover{
-			background-color: var(--gray);
-			border-color: var(--orange);
-		}
-	
-		.contact-icon-wrapper:hover i, .contact-icon-wrapper:hover .contact-icon-text{
-			color: var(--orange);
 		}
 	}
 
