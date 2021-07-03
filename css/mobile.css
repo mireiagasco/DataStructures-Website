@@ -1,0 +1,268 @@
+:root {
+  --gray: #343A40;
+  --darkGray: #2a2f33;
+  --lighGray: #42484e;
+  --orange: #E18905;
+  --darkOrange: #BE7404;
+}
+
+::-webkit-scrollbar {
+  width: 0px;
+}
+
+html, body {
+  overflow-x: hidden;
+  color: white;
+  text-align: center;
+  line-height: 1.5;
+}
+
+/*-------------------------------------------------
+					Main Style
+--------------------------------------------------*/
+.homepage {
+  height: 100vh;
+  text-align: center;
+  position: relative;
+}
+
+.homepage .navbar {
+  position: fixed;
+  width: 100%;
+  height: 10vh;
+  background-color: var(--gray);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 5%;
+  z-index: 1;
+  color: white;
+}
+
+.homepage .navbar .nav-content {
+  position: absolute;
+  height: 100vh;
+  width: 100%;
+  top: 0;
+  left: 0;
+  padding-top: 20%;
+  background-color: var(--gray);
+  -webkit-transform: translateX(100%);
+          transform: translateX(100%);
+  -webkit-transition: -webkit-transform .5s ease-in;
+  transition: -webkit-transform .5s ease-in;
+  transition: transform .5s ease-in;
+  transition: transform .5s ease-in, -webkit-transform .5s ease-in;
+}
+
+.homepage .navbar .credits {
+  font-style: italic;
+  font-weight: bold;
+  font-size: large;
+  opacity: .8;
+}
+
+.homepage .navbar .credits:hover {
+  font-style: normal;
+  color: var(--orange);
+  opacity: 1;
+}
+
+.homepage .navbar .nav, .homepage .navbar .social-media {
+  display: none;
+}
+
+.homepage .navbar .burger-menu {
+  display: block;
+  position: relative;
+  font-size: 2rem;
+  z-index: 2;
+}
+
+.homepage .navbar .burger-menu:hover {
+  color: var(--orange);
+  cursor: pointer;
+}
+
+.homepage .hero {
+  width: 100vw;
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin-top: 10vh;
+  height: 90vh;
+  padding: 5%;
+}
+
+.homepage .hero h1 {
+  left: 0;
+  margin-top: 50%;
+  color: white;
+  font-size: 4rem;
+}
+
+/*-------------------------------------------------
+				Burger Menu
+--------------------------------------------------*/
+.container .homepage .navbar.burger-menu-open {
+  height: 100vh;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 1fr 2fr 2fr;
+      grid-template-rows: 1fr 2fr 2fr;
+}
+
+.container .homepage .nav, .container .homepage .social-media {
+  display: block;
+}
+
+.container .homepage .social-media {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.container .homepage .social-media .icon-text {
+  opacity: 0;
+}
+
+.container .homepage .social-media .icon:hover {
+  color: var(--orange);
+}
+
+.container .homepage .burger-menu {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 5%;
+}
+
+.container .homepage .burger-menu .fa-times {
+  display: none;
+}
+
+.container .homepage .hero h1 {
+  z-index: 10;
+}
+
+/*-------------------------------------------------
+					Structures
+--------------------------------------------------*/
+.structures {
+  position: relative;
+  text-align: center;
+  color: white;
+  line-height: 1.5;
+  padding-top: 10vh;
+}
+
+.structures .structure-container {
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+.structures .structure-container .structure-content {
+  margin: 0 auto;
+}
+
+.structures .structure-container .structure-content svg {
+  display: block;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.structures .structure-container .structure-content .structure-description h3 {
+  font-weight: bold;
+}
+
+.structures .structure-container .structure-content .structure-description h3 span {
+  font-weight: normal;
+}
+
+.structures .structure-container .structure-content .structure-description a {
+  font-style: italic;
+}
+
+.structures .structure-container .structure-content .structure-description a:hover {
+  color: var(--orange);
+  font-weight: bold;
+  font-style: normal;
+}
+
+/*-------------------------------------------------
+					Footer
+--------------------------------------------------*/
+.end {
+  margin-top: 10%;
+  height: 50vh;
+  color: white;
+  text-align: center;
+  padding: 5%;
+  line-height: 1.5;
+}
+
+.end .structure-container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+  height: 40vh;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+
+.end .structure-container .contact-icon-wrapper {
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+  margin-left: 35%;
+  width: 30%;
+  margin-right: 35%;
+  font-size: medium;
+  padding: 3%;
+  border-style: solid;
+  border-width: 4px;
+  background-color: var(--orange);
+  color: white;
+  cursor: pointer;
+}
+
+.end .structure-container .contact-icon-wrapper i {
+  display: none;
+}
+
+.end .structure-container .contact-icon-text {
+  font-weight: bold;
+}
+
+.end .structure-container .contact-icon-wrapper:hover {
+  background-color: var(--gray);
+  border-color: var(--orange);
+}
+
+.end .structure-container .contact-icon-wrapper:hover i, .end .structure-container .contact-icon-wrapper:hover .contact-icon-text {
+  color: var(--orange);
+}
+
+.end footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background-color: var(--gray);
+  opacity: .8;
+  font-size: small;
+}
+/*# sourceMappingURL=mobile.css.map */

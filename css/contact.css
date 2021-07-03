@@ -1,0 +1,191 @@
+:root {
+  --gray: #343A40;
+  --lighGray: #42484e;
+  --orange: #E18905;
+  --darkOrange: #BE7404;
+}
+
+/*-----------------------------------------
+            Main Styling
+------------------------------------------*/
+.form-container {
+  z-index: 3;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  height: 70vh;
+  width: 60vw;
+  text-align: center;
+  background-color: var(--lighGray);
+  display: none;
+  -ms-grid-rows: 1fr 3fr 1fr;
+      grid-template-rows: 1fr 3fr 1fr;
+  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.form-container .contact {
+  width: 100%;
+  height: 100%;
+}
+
+.form-container .form-title {
+  padding-top: 8%;
+  font-family: "Permanent Marker", sans-serif;
+  font-size: 300%;
+  color: white;
+}
+
+.form-container .entry {
+  position: relative;
+  width: 60%;
+  margin-left: 20%;
+  margin-right: 20%;
+  margin-top: 5%;
+}
+
+.form-container .entry input, .form-container .entry textarea {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 300%;
+  border-width: 2px;
+  border-style: solid;
+  border-color: var(--gray);
+  font-family: inherit;
+  font-size: inherit;
+  color: white;
+  outline: none;
+  padding: 1.25rem;
+  background: none;
+}
+
+.form-container .entry textarea {
+  height: 900%;
+}
+
+.form-container .entry input:hover, .form-container .entry textarea:hover {
+  border-color: var(--orange) !important;
+}
+
+.form-container .entry input:focus, .form-container .entry textarea:focus {
+  border-color: var(--orange) !important;
+}
+
+.form-container .entry label {
+  position: absolute;
+  left: 5%;
+  top: 30%;
+  color: white;
+  cursor: text;
+  -webkit-transition: top 200ms ease-in, left 200ms ease-in, font-size 200ms ease-in;
+  transition: top 200ms ease-in, left 200ms ease-in, font-size 200ms ease-in;
+  background-color: var(--lighGray);
+  padding: 1%;
+}
+
+.form-container .entry input:focus ~ label, .form-container .entry textarea:focus ~ label {
+  font-size: small;
+  top: -14%;
+  left: 3%;
+}
+
+.form-container .entry input:not(:placeholder-shown) ~ label, .form-container .entry textarea:not(:placeholder-shown) ~ label {
+  font-size: small;
+  top: -14%;
+  left: 3%;
+}
+
+.form-container .entry .error {
+  position: absolute;
+  font-size: 0.9rem;
+  color: white;
+  bottom: 10%;
+  right: 2%;
+  display: none;
+}
+
+.form-container .button-wrapper {
+  position: static;
+  -ms-flex-item-align: start;
+      -ms-grid-row-align: start;
+      align-self: start;
+}
+
+.form-container .submitbtn {
+  margin-right: 10%;
+}
+
+.button {
+  padding: 2%;
+  background-color: var(--lighGray);
+  border-width: 2px;
+  border-style: solid;
+  border-color: var(--gray);
+  border-radius: 10%;
+  font-size: medium;
+  font-weight: bold;
+  color: white;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: #E18905;
+  color: var(--gray);
+}
+
+/*-----------------------------------------
+            Backdrop
+------------------------------------------*/
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: var(--gray);
+  opacity: 0.5;
+  display: none;
+  z-index: 2;
+}
+
+.infoPanel {
+  z-index: 3;
+  position: fixed;
+  top: 45%;
+  left: 30%;
+  width: 40%;
+  height: 10%;
+  border-color: white;
+  background-color: var(--lighGray);
+  border-width: 4px;
+  border-style: solid;
+  display: none;
+  -ms-grid-columns: 4fr 1fr;
+      grid-template-columns: 4fr 1fr;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  -webkit-transition: all .1s ease-in;
+  transition: all .1s ease-in;
+}
+
+.infoPanel .panelbtn {
+  height: 60%;
+  width: 70%;
+  text-transform: uppercase;
+  border-radius: 10%;
+  padding: 10%;
+}
+
+.infoPanel .panel-text {
+  color: white;
+  cursor: context-menu;
+}
+/*# sourceMappingURL=contact.css.map */

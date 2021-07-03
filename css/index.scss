@@ -1,0 +1,121 @@
+:root{
+	--gray: #343A40;
+	--darkGray: #2a2f33;
+	--lighGray: #42484e;
+	--orange: #E18905;
+	--darkOrange: #BE7404;
+}
+
+::-webkit-scrollbar{
+	width: 12px;	
+}
+
+::-webkit-scrollbar-thumb{
+	background-color: var(--orange);
+	transition: color .1s ease-in;
+}
+
+::-webkit-scrollbar-thumb:hover{
+	background-color: var(--darkOrange);
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;1,500;1,600&family=Permanent+Marker&display=swap');
+
+body, *, *:before, *:after{
+	box-sizing: border-box;
+}
+
+html{
+	scroll-behavior: smooth;
+}
+
+html, body{
+	font-family: "Montserrat", sans-serif;
+	font-size: medium;
+}
+
+h1{
+	font-family: "Permanent Marker", sans-serif;
+	font-size: xx-large;
+	font-weight: bolder;
+}
+
+h2{
+	font-size: x-large;
+	font-weight: bold;
+}
+
+a{
+	color: inherit;
+	text-decoration: none;
+}
+
+.container{
+	background-image: url(/images/Endless-Constellation.svg);
+	z-index: -100;
+}
+
+
+.navbar{
+	height: 100vh;
+	color: white;
+	font-size: x-large;
+	display: grid;
+	grid-template-rows: 1fr 3fr;
+	text-align: center;
+	align-items: center;
+
+	.nav-content{
+		align-self: flex-start;
+	}
+
+	.nav, .social-media, .hero{
+		opacity: 0.8;
+	}
+
+	.credits{
+		opacity: 0.5;
+		transition: opacity 0.1s ease-in;
+	}
+
+	.credits:hover{
+		opacity: 1;
+	}
+
+	.nav ul{
+		display: grid;
+		grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+		row-gap: 3vh;
+	}
+
+	.nav-element{
+		width: 50%;
+		margin: auto;
+		padding: 3vh;
+		transition: all .1s ease-in;
+	}
+
+	.nav-element:hover{
+		background-color: var(--orange);
+		cursor: pointer;
+	}
+
+	.social-media{
+		align-self: start;
+
+		hr{
+			width: 50%;
+			border-color: var(--orange);
+		}
+
+		ul{
+			margin-top: 5%;
+			display: grid;
+			grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+			
+			:first-child{
+				grid-column: 2;
+			}
+		}
+	}
+}
